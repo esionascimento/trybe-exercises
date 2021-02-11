@@ -1,0 +1,38 @@
+
+
+
+div:hover{
+
+    border-style: solid;
+    margin-top: 100;
+    
+    border-right-width: 250px;
+    
+}
+div, h3{
+    padding: 2px;
+    font-style: italic;
+}
+
+div:nth-child(3){
+    color: red;
+    background-color: violet;
+}
+div:nth-child(4):link{
+    color: green;
+    cursor: alias;
+
+}
+div:nth-child(5){
+    color: yellow;
+    font-size: 25px;
+    cursor: all-scroll;
+}
+div:nth-child(6):active{
+    color: maroon;
+    
+}
+div:nth-child(7){
+    color: aquamarine;
+    border-radius: 10%;
+}
