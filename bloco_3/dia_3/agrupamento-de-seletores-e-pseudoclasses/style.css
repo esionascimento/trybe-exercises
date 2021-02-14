@@ -1,0 +1,15 @@
+
+h1, p{
+    text-align: center;
+}
+
+.ordenado:hover{
+    background-color: aqua;
+}
+.ordenado:active{
+    color: forestgreen;
+}
+
+ol,ul{
+    list-style: none;
+}
