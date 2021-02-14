@@ -1,0 +1,40 @@
+/*Parte 1*/
+h1#h1parte1{
+    font: 65px;
+    color: orangered;
+}
+
+#id-ul{
+  background-color: silver;
+}
+
+.p-list-style{
+  background-color: chartreuse;
+}
+
+/*Parte 2*/
+h1#h1parte2{
+    font-family: sans-serif;
+}
+p#pparte2{
+    font-weight: 600;
+    font-size: 48px;
+}
+body{
+    font-size: 16px;
+}
+#amarelo{
+    background-color: yellow;
+}
+#vermelho{
+    background-color: red;
+}
+#marrom{
+    background-color: brown;
+}
+.ul-style{
+    font-style: italic;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
