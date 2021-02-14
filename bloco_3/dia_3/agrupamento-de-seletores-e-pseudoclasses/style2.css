@@ -1,38 +1,35 @@
-
-
-
 div:hover{
-
     border-style: solid;
-    margin-top: 100;
-    
-    border-right-width: 250px;
-    
 }
+
 div, h3{
     padding: 2px;
-    font-style: italic;
 }
 
 div:nth-child(3){
-    color: red;
     background-color: violet;
 }
-div:nth-child(4):link{
-    color: green;
-    cursor: alias;
 
+div:nth-child(4){
+    background-color: green;
+    cursor: alias;
 }
+
 div:nth-child(5){
-    color: yellow;
-    font-size: 25px;
+    background-color: yellow;
+    padding: 20px;
+}
+
+div:nth-child(6){
+    background-color: maroon;
     cursor: all-scroll;
 }
-div:nth-child(6):active{
-    color: maroon;
-    
-}
+
 div:nth-child(7){
-    color: aquamarine;
+    background-color: aquamarine;
     border-radius: 10%;
+}
+
+div:nth-child(2n+1){
+    font-style: italic;
 }
