@@ -1,0 +1,64 @@
+*, li,ol{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style-type: none;
+}
+body{
+    background-color: salmon;
+    
+}
+nav{
+    background-color: silver;
+    text-align: right;
+}
+a{
+    margin-right: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+header{
+    text-align: center;
+    margin: 20px;
+}
+.classificacao{
+    text-align: left;
+}
+.tabela{
+    margin: auto;
+}
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    margin: auto;
+}
+.referencias, .artigo-esquerda > section{
+    background-color: silver;
+    margin-bottom: -2px;
+}
+.artigo-direita > section{
+    background-color: silver;
+    margin-bottom: -2px;
+    
+}
+.artigo{
+    width: auto;
+}
+section:nth-child(n){
+    
+}
+@media(max-width: 900px){
+
+    .conteudo{
+        grid-template-columns: 1fr;
+        
+    }
+    
+}
+.video{
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+}
