@@ -1,49 +1,40 @@
-
-.cli{
+ol > li{
     background-color: yellow;
-}
-.par{
-    color:darkgreen;
-}
-.primo{
     text-transform: uppercase;
+}
+.w3s:hover, .trybe:hover, ol > li:nth-child(even){
+    color: green;
+}
+ol li:first-child, ol li:nth-child(2n+4){
+    text-transform: none;
 }
 h1, h2, h3{
     color: red;
 }
-em.citalico{
-    font-size: 40px;
-    border: 1px black solid;
-}
-.cli em{
-    font-weight: bold;
+li em, a:hover{
+    font-weight: bolder;
 }
 li{
     font-size: 20px;
 }
-.lin:nth-child(2){
-    background-color: salmon;
+.citalico{
+    font-size: 40px;
+    border: 1px black solid;
 }
-.primeira, .segunda, .terceira{
+ul:nth-of-type(1) li:nth-child(-n+3){
     color: blue;
 }
-a:hover{
-    font-weight: bold;
+ul:nth-of-type(1) li:nth-child(n+2):nth-child(-n+3){
+    background-color: salmon;
 }
 .stack:hover{
 	color: orange;
-}
-.w3s:hover{
-    color: green;
 }
 .mdn:hover{
     color: black;
 }
 .dev:hover{
-    color: gold;
-}
-.trybe:hover{
-    color: green;
+    color: yellow;
 }
 /*
  - Faça com que todos os itens de Listas Ordenadas tenham uma cor de fundo amarela. Se a numeração do item for PAR, faça a cor de fonte ser verde. Se o número for considerado primo, utilize a propriedade text-transform para deixar o texto maiúsculo. (Dica: combinar classes pode ser útil aqui).
