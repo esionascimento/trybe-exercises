@@ -26,3 +26,9 @@ if(soma>20){
 console.log(`5. Maior: ${maior}`);
 console.log(`6. ${contImpar}`);
 console.log(`7. Menor: ${menor}`);
+console.log(`----------`);
+let arrayNumber=[];
+for(a=1; a<=25; a++){
+    arrayNumber[a]=a;
+    console.log(`${arrayNumber[a]}`);
+}
