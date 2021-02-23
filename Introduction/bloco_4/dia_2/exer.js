@@ -9,3 +9,4 @@ for (a=0; a<numbers.length; a++){
 }
 
 console.log(soma);
+console.log(soma/numbers.length);
