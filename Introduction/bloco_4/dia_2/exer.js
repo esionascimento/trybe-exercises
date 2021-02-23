@@ -1,5 +1,5 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let a, soma=0, resto, contImpar=0, maior=-9999;
+let a, soma=0, resto, contImpar=0, maior=-9999, menor=9999;
 
 for (a=0; a<numbers.length; a++){
     console.log(numbers[a]);
@@ -10,6 +10,9 @@ for (a=0; a<numbers.length; a++){
     }
     if(numbers[a]>maior){
         maior=numbers[a];
+    }
+    if(numbers[a]<menor){
+        menor=numbers[a];
     }
 }
 console.log(`----------`);
@@ -22,3 +25,4 @@ if(soma>20){
 }
 console.log(`5. Maior: ${maior}`);
 console.log(`6. ${contImpar}`);
+console.log(`7. Menor: ${menor}`);
