@@ -32,3 +32,8 @@ for(a=1; a<=25; a++){
     arrayNumber[a]=a;
     console.log(`${arrayNumber[a]}`);
 }
+console.log(`----------`);
+let divisao;
+for(a=1; a<=25; a++){
+    console.log(`${a}: ${arrayNumber[a]/2}`);
+}
