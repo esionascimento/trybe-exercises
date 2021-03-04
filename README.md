@@ -1,45 +1,45 @@
 # Trybe
 
-Este repositorio contem todas as atividades de aprendizagem desenvolvidas por _Esio Rodrigues da Silva Nascimento (https://www.linkedin.com/in/esio-rodrigues-da-silva-nascimento-8568a7173/)_ enquanto estudava na [Trybe](https://www.betrybe.com/) :rocket:
+Este repositorio contem todas as atividades de aprendizagem desenvolvidas por [Esio Rodrigues da Silva Nascimento](https://www.linkedin.com/in/esio-rodrigues-da-silva-nascimento-8568a7173/) enquanto estuda na [Trybe](https://www.betrybe.com/) :rocket:
 
 _"A Trybe é uma escola do futuro para qualquer pessoa que queira melhorar de vida e construir uma carreira de sucesso em tecnologia, onde a pessoa só paga quando conseguir um bom trabalho."_
 
 O programa conta com mais de 1.500 horas de aulas presenciais e online, aborda introdução ao desenvolvimento de software, front-end, back-end, ciência da computação, engenharia de software, metodologias ágeis e habilidades comportamentais.
 
-## Fundamentos do Desenvolvimento Web :white_check_mark:
+## Fundamentos do Desenvolvimento Web
 
-##### Bloco 1: Introdução - Unix & Shell
+##### Bloco 1: Introdução - Unix & Shell :white_check_mark:
 
 - [x] 1-3: _Fundamentos do Desenvolvimento Web_
 - [x] 1-3: _Introdução - Unix & Shell_
 - [x] 1-3: _Unix & Bash - Part 1_
 - [x] 1-4: _Unix & Bash - Part 2_
 
-##### Bloco 2: Git & GitHub
+##### Bloco 2: Git & GitHub :white_check_mark:
 
 - [x] 2-1: _O que é e para que serve?_
 - [x] 2-2: _Entendendo os comandos_
 - [x] 2-3: _Internet - Entendendo como ela funciona_
 
-##### Bloco 3: Introdução - HTML & CSS
+##### Bloco 3: Introdução à HTML & CSS :white_check_mark:
 
 - [x] 3-1: _HTML & CSS - Estruturas de pagina_
 - [x] 3-2: _HTML & CSS - Primeiros passos em CSS_
 - [x] 3-3: _HTML & CSS - Seletores e posicionamento_
 - [x] 3-4: _HTML Semântico_
-- [x] 3-5: _[Projeto - Lessons Learned_
+- [x] 3-5: _[Projeto - Lessons Learned](https://github.com/tryber/sd-010-b-project-lessons-learned/pull/47)_
 
-##### Bloco 4: Introdução - JavaScript
+##### Bloco 4: Introdução à JavaScript e Lógica de Programação :white_check_mark:
 
 - [x] 4-1: _JavaScript - Primeiros passos_
 - [x] 4-2: _JavaScript - Array e loop For_
 - [x] 4-3: _JavaScript - Lógica de Programação e Algoritmos_
 - [x] 4-4: _JavaScript - Objetos e funções_
-- [ ] 4-5: _[Projeto - Playground Functions]()_
 
-##### Bloco 5: IntroduÃ§Ã£o - JavaScript - Projetos
 
-- [ ] 5-1: _JavaScript - DOM e seletores_
+##### Bloco 5: JavaScript: DOM, Eventos e Web Storage
+
+- [x] 5-1: _JavaScript - DOM e seletores_
 - [ ] 5-2: _JavaScript - Trabalhando com elementos_
 - [ ] 5-3: _JavaScript - Eventos_
 - [ ] 5-4: _JavaScript - Web Storage_
