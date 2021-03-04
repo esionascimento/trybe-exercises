@@ -31,3 +31,10 @@ function modifyTagP () {
 }
 modifyTagP ();
 /* 5-Crie uma função que exiba o conteúdo de todas as tags <p> no console. */
+function showTagP() {
+  let dadoTagP = document.getElementsByTagName('p');
+  for (let i = 0; i < dadoTagP.length; i += 1){
+    console.log(dadoTagP[i].innerHTML);
+  }
+}
+showTagP();
