@@ -18,6 +18,10 @@ function changeSquareColorToGreen() {
 changeSquareColorToGreen();
 /*  3-Crie uma função que corrija o texto da tag <h1>.
  Crie uma função que modifique todo o texto da tag <p> para maiúsculo. */
-
+function corrigirNome() {
+  let nome = document.getElementsByTagName('h1')[0];
+  nome.innerHTML = 'Exercício 5.1 - JavaScript';
+}
+corrigirNome();
 /*  4-Crie uma função que exiba o conteúdo de todas as tags <p> no console. */
         
