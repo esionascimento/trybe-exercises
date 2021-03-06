@@ -57,27 +57,66 @@
   </head>
   <body>
     <script> 
+      //Parte 1
       //1
-      let h1 = document.createElement('h1');
-      h1.innerText = 'Exercício 5.2 - JavaScript DOM';
-      document.body.appendChild(h1);
+      let elementH1 = document.createElement('h1');
+      elementH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      document.body.appendChild(elementH1);
       //2
-      let div = document.createElement('div');
-      div.className = 'main-content';
-      document.body.appendChild(div);
+      let elementDiv = document.createElement('div');
+      elementDiv.className = 'main-content';
+      document.body.appendChild(elementDiv);
       //3
-      let div2 = document.createElement('div');
-      div2.className = 'center-content';
-      document.querySelector('div').appendChild(div2);
+      let elementDivCenter = document.createElement('div');
+      elementDivCenter.className = 'center-content';
+      document.querySelector('div').appendChild(elementDivCenter);
       //4
-      let p = document.createElement('p');
-      document.querySelector('div').lastChild.appendChild(p);
+      let parag = document.createElement('p');
+      document.querySelector('div').lastChild.appendChild(parag);
       //5
-      let div3 = document.createElement('div');
-      div3.className = 'left-content';
-      document.querySelector('div').appendChild(div3);
+      let elementDivLeft = document.createElement('div');
+      elementDivLeft.className = 'left-content';
+      elementDivLeft.innerHTML = 'texto-left'
+      elementDiv.appendChild(elementDivLeft);
       //6
-      
+      let elementDivHight = document.createElement('div');
+      elementDivHight.className = 'right-content';
+      elementDivHight.innerHTML = 'texto-hight'
+      elementDiv.appendChild(elementDivHight);
+      //7
+      const imagem = document.createElement('img');
+      imagem.className = 'small-image';
+      imagem.src = 'https://picsum.photos/200';
+      elementDivLeft.appendChild(imagem);
+      //8
+      let elementUl = document.createElement('ul');
+      elementDivHight.appendChild(elementUl);
+      let array = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis','sete', 'oito', 'nove', 'dez'];
+      for (let i = 0; i < 10; i += 1) {
+        let elementLi = document.createElement('li');
+        elementLi.innerHTML = array[i];
+        elementUl.appendChild(elementLi);
+      }
+      //9
+      let elementH3 = document.createElement('h3');
+      elementDiv.appendChild(elementH3);
+      let elementH3_2 = document.createElement('h3');
+      elementDiv.appendChild(elementH3_2);
+      let elementH3_3 = document.createElement('h3');
+      elementDiv.appendChild(elementH3_3);
+      //Parte 2
+      //1
+      elementH1.className = 'title';
+      //2
+      elementH3.className = 'description';
+      elementH3_2.className = 'description';
+      elementH3_3.className = 'description';
+      //3
+
+      let elem = document.getElementsByClassName('left-content')[0];
+      let rem = document.querySelector('div');
+      rem.removeChild(elem);
+
     </script>
   </body>
 </html>
