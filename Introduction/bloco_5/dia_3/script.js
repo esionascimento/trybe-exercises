@@ -22,13 +22,17 @@ function createDaysOfTheMonth() {
     let day = dezDaysList[index];
     let dayItem = document.createElement('li');
     dayItem.className = 'day';
-    if (day === 24 || day === 25 || day === 31){
+    if (day === 24 || day === 31){
       dayItem.innerHTML = day;
       dayItem.className = 'day holiday';
       getDaysList.appendChild(dayItem);
-    }else if (day === 4 || day === 11 || day === 18 || day === 25) {
+    }else if (day === 4 || day === 11 || day === 18) {
       dayItem.innerHTML = day;
       dayItem.className = 'day friday';
+      getDaysList.appendChild(dayItem);
+    }else if (day === 25) {
+      dayItem.className = 'day holiday friday';
+      dayItem.innerHTML = day;
       getDaysList.appendChild(dayItem);
     }else {
       dayItem.innerHTML = day;
@@ -43,17 +47,28 @@ function funFeriados(buttonName) {
   let buttonContainer = document.querySelector('.buttons-container');
   let newButton = document.createElement('button');
   let newButtonID = 'btn-holiday';
-
   newButton.innerHTML = buttonName;
   newButton.id = newButtonID;
   buttonContainer.appendChild(newButton);
 }
 funFeriados('Feriados');
 
-function clickButton() {
-  let getButton = document.querySelector('#btn-holiday');
-  let getFeriados = document.querySelectorAll('.holiday');
-  
 
+ 
+function clickButton(){
+
+  for (let index = 0; index < getFeriados.length; index += 1){
+    if( getFeriados[index].style.backgroundColor == "black"){
+      console.log("eai");
+      getFeriados[index].style.backgroundColor = "rgb(238,238,238)";
+    } else {
+      console.log("22");
+      getFeriados[index].style.backgroundColor = "black";
+    }
+  }
 }
-clickButton();
+
+let getButton = document.querySelector('#btn-holiday');
+let getFeriados = document.querySelectorAll('.holiday');
+
+getButton.addEventListener('click', clickButton);
