@@ -142,4 +142,25 @@ function clickTaskSelected(eventoDeOrigem) {
     diaMes.style.color = 'rgb(119,119,119)';
   }
 }
+//bonus
 
+let task_in = document.querySelector('#task-input1');
+let list_compromisso = document.querySelector('.task-list');
+
+btCompromisso = document.querySelector('#btn-add');
+btCompromisso.addEventListener('click', funCompromisso);
+task_in.addEventListener('keypress', funEnter);
+
+function funEnter(e) {
+  if(e.which == 13){
+     funCompromisso();
+  }
+}
+function funCompromisso() {
+  let dayItem = document.createElement('li');
+  dayItem.innerHTML = task_in.value;
+  if(dayItem.innerHTML == ''){
+    alert('Erro');
+  }
+  list_compromisso.appendChild(dayItem);
+}
