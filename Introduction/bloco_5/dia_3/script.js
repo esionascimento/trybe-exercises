@@ -53,7 +53,6 @@ function funFeriados(idButton,buttonName) {
 funFeriados('btn-holiday','Feriados');
 //3 
 function clickButton(){
-
   for (let index = 0; index < getFeriados.length; index += 1){
     if( getFeriados[index].style.backgroundColor == "black"){
       console.log("eai");
@@ -70,4 +69,34 @@ let getFeriados = document.querySelectorAll('.holiday');
 getButton.addEventListener('click', clickButton);
 //4
 funFeriados('btn-friday','Sexta-feira');
-funFeriados('btn-sabado','Sabado');
+//5
+function clickButtonFriday(){
+    let array = [4,11,18,25];
+
+    for (let index = 0; index < getFriday.length; index += 1){
+      
+      if (getFriday[index].innerHTML == array[index]) {
+        getFriday[index].innerHTML = 'Sexta-Feira';
+      }else {
+        getFriday[index].innerHTML = array[index];
+      }
+    }
+}
+
+let getButtonFriday = document.querySelector('#btn-friday');
+let getFriday = document.querySelectorAll('.day.friday');
+getButtonFriday.addEventListener('click', clickButtonFriday);
+
+//6
+function dayMouseOver() {
+  event.target.style.fontSize = '30px';
+  event.target.style.fontWeight = '600';
+}
+function dayMouseOut() {
+  event.target.style.fontWeight = '200';
+  event.target.style.fontSize = '20px';
+}
+let diasOn = document.querySelector('#days');
+diasOn.addEventListener('mouseover', dayMouseOver);
+let diasOff = document.querySelector('#days');
+diasOff.addEventListener('mouseout', dayMouseOut);
