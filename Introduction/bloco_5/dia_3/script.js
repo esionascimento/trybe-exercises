@@ -100,3 +100,46 @@ let diasOn = document.querySelector('#days');
 diasOn.addEventListener('mouseover', dayMouseOver);
 let diasOff = document.querySelector('#days');
 diasOff.addEventListener('mouseout', dayMouseOut);
+//7
+let spanzinho = document.createElement('span');
+let tasks = document.querySelector('.my-tasks');
+funTasks('cozinha');
+function funTasks(tarefa) {
+  spanzinho.innerHTML = tarefa;
+  tasks.appendChild(spanzinho);
+}
+//8
+function legenda(cor) {
+  let divTask = document.createElement('div');
+  divTask.className = 'task';
+  divTask.style.background = cor;
+  tasks.appendChild(divTask);
+}
+legenda('blue');
+//9
+
+let divSelect = document.querySelector('.task');
+function clickSelected() {
+
+  if(divSelect.className == 'task') {
+    divSelect.className = 'task selected';
+  }else {
+    divSelect.className = 'task';
+  }
+}
+divSelect.addEventListener('click', clickSelected);
+//10
+let clickTask = document.querySelector('#days');
+clickTask.addEventListener('click', clickTaskSelected);
+let guardaSelect = document.querySelector('.task');
+
+function clickTaskSelected(eventoDeOrigem) {
+  let diaMes = eventoDeOrigem.target;
+  console.log(diaMes);
+  if (guardaSelect.className == 'task selected') {
+    diaMes.style.color = 'blue';
+  } else {
+    diaMes.style.color = 'rgb(119,119,119)';
+  }
+}
+
