@@ -42,19 +42,16 @@ function createDaysOfTheMonth() {
   }
 }
 createDaysOfTheMonth();
-
-function funFeriados(buttonName) {
+//2
+function funFeriados(idButton,buttonName) {
   let buttonContainer = document.querySelector('.buttons-container');
   let newButton = document.createElement('button');
-  let newButtonID = 'btn-holiday';
   newButton.innerHTML = buttonName;
-  newButton.id = newButtonID;
+  newButton.id = idButton;
   buttonContainer.appendChild(newButton);
 }
-funFeriados('Feriados');
-
-
- 
+funFeriados('btn-holiday','Feriados');
+//3 
 function clickButton(){
 
   for (let index = 0; index < getFeriados.length; index += 1){
@@ -70,5 +67,7 @@ function clickButton(){
 
 let getButton = document.querySelector('#btn-holiday');
 let getFeriados = document.querySelectorAll('.holiday');
-
 getButton.addEventListener('click', clickButton);
+//4
+funFeriados('btn-friday','Sexta-feira');
+funFeriados('btn-sabado','Sabado');
