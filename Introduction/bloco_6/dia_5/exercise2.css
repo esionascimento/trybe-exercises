@@ -4,3 +4,26 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+@media screen and (max-width: 450px) {
+  body {
+    margin: 5px;
+  }
+  header > p {
+    font-size: 24px;
+  }
+  p{
+    text-align: justify;
+    font-size: x-large;
+  }
+  li {
+    font-size: x-large;
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+}
