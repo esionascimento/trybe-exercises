@@ -99,3 +99,90 @@
     font-size: 18px;
   }
 }
+
+@media screen and (max-width: 240px) {
+  #aside {
+    display: none;
+  }
+  body {
+    padding: 0px;
+    margin: 10px;
+  }
+  h1 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 8px;
+  }
+  img {
+    width: 100%;
+  }
+  #content {
+    clear: left;
+    float: left;
+    width: 90%;
+    padding: 20px 0;
+    margin: 0 0 0 4%;
+    display: inline;
+  }
+  #header {
+    display: flex;
+    position: fixed;
+    width: 80%;
+  }
+  #navigation {
+    margin-top: 65px;
+    font-size: 14px;
+  }
+  #navigation > ul{
+    display: flex;
+    flex-direction: column;
+  }
+  #navigation > ul > li > a {
+    border-right: none;
+  }
+  #footer { 
+    font-size: 10px;
+    max-width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 241px) and (max-width: 360px) {
+  #aside {
+    display: none;
+  }
+  body {
+    padding: 0px;
+    margin: 10px;
+  }
+  img {
+    width: 100%;
+  }
+  #content {
+    clear: left;
+    float: left;
+    width: 95%;
+    padding: 20px 0;
+    margin: 0 0 0 4%;
+    display: inline;
+  }
+  #header {
+    display: flex;
+    position: fixed;
+    width: 80%;
+  }
+  #navigation {
+    margin-top: 90px;
+  }
+  #navigation > ul{
+    display: flex;
+    flex-direction: column;
+  }
+  #navigation > ul > li > a {
+    border-right: none;
+  }
+  #footer { 
+    max-width: 100%;
+    text-align: center;
+  }
+}
